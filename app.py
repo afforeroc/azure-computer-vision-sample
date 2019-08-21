@@ -5,7 +5,7 @@ from msrest.authentication import CognitiveServicesCredentials
 
 # Get endpoint and key from environment variables
 endpoint = "https://eastus.api.cognitive.microsoft.com/"
-key = "<Your credentials>"
+key = "00eae8b7899443ceb8826660c697b22a"
 
 # Set credentials
 credentials = CognitiveServicesCredentials(key)
