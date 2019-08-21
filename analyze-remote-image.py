@@ -28,8 +28,7 @@ image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/" + \
 headers = {'Ocp-Apim-Subscription-Key': subscription_key}
 params = {'visualFeatures': 'Categories,Description,Color'}
 data = {'url': image_url}
-response = requests.post(analyze_url, headers=headers,
-                         params=params, json=data)
+response = requests.post(analyze_url, headers=headers, params=params, json=data)
 response.raise_for_status()
 
 # The 'analysis' object contains various fields that describe the image. The most

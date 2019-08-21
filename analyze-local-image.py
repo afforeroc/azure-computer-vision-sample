@@ -22,14 +22,14 @@ vision_base_url = "https://eastus.api.cognitive.microsoft.com/vision/v2.0/"
 analyze_url = vision_base_url + "analyze"
 
 # Set image_path that you want to analyze
-image_path = "C:/Users/V-ANDFOR/GitHub/azure-computer-vision-sample/broadway.jpg"
+image_path = "broadway.jpg"
 # Read the image into a byte array
 image_data = open(image_path, "rb").read()
 # Set Content-Type to octet-stream
 headers = {'Ocp-Apim-Subscription-Key': subscription_key, 'Content-Type': 'application/octet-stream'}
 params = {'visualFeatures': 'Categories,Description,Color'}
 # put the byte array into your post request
-response = requests.post(analyze_url, headers=headers, params=params, data = image_data)
+response = requests.post(analyze_url, headers=headers, params=params, data=image_data)
 response.raise_for_status()
 
 # The 'analysis' object contains various fields that describe the image. The most
