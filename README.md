@@ -9,11 +9,9 @@ This Azure Computer Vision Sample show all tags of url image. Written in Python.
 * Run with: `pyhton app.py`
 
 # Additional elements
-`analyze-remote-image.py`
-`ocr-remote-image.py`
-
-`analyze-local-image.py` using `broadway.jpg`
-`ocr-local-image.py` using `atoms.png`
-
-`tiff_to_png.py`, script to converte images with tiff extension for png
+* `analyze-remote-image.py`
+* `ocr-remote-image.py`
+* `analyze-local-image.py` using `broadway.jpg`
+* `ocr-local-image.py` using `atoms.png`
+* `tiff_to_png.py`, script to converte images with tiff extension for png
 
