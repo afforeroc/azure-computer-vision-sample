@@ -22,12 +22,12 @@ vision_base_url = "https://eastus.api.cognitive.microsoft.com/vision/v2.0/"
 ocr_url = vision_base_url + "ocr"
 
 # Set image_path that you want to analyze
-image_path = "test.png"
+image_path = "atoms.png"
 # Read the image into a byte array
 image_data = open(image_path, "rb").read()
 # Set Content-Type to octet-stream
 headers = {'Ocp-Apim-Subscription-Key': subscription_key, 'Content-Type': 'application/octet-stream'}
-params = {'language': 'unk', 'detectOrientation': 'true'}
+params = {'language': 'es', 'detectOrientation': 'true'}
 # put the byte array into your post request
 response = requests.post(ocr_url, headers=headers, params=params, data=image_data)
 response.raise_for_status()
